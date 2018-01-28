@@ -1,0 +1,15 @@
+version: '2'
+services:
+  # Set custom names for image, service and container
+  docker_node:
+    image: docker_node
+    build:
+      context: .
+    # Forward ports
+    ports:
+      - 3000:3000
+    container_name: docker_node
+    # Share host volumes (project folder) with container
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules

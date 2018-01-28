@@ -1,0 +1,13 @@
+{
+  "name": "docker_node",
+  "version": "1.0.0",
+  "description": "Base template for Nodejs on Docker",
+  "author": "<ivan.torso@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
